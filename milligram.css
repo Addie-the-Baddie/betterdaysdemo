@@ -703,7 +703,19 @@
   }
 
   .top-margin {
-    margin-top: 8.0rem;
+    margin-top: 5.0rem;
+  }
+
+  .bottom-margin {
+    margin-bottom: 5.0rem;
+  }
+
+   .top-padding {
+    padding-top: 5.0rem;
+  }
+
+  .bottom-padding {
+    padding-bottom: 5.0rem;
   }
 
   .cta {
@@ -761,7 +773,6 @@
 
   .topnav{
     background-color: #BADBDF;
-    margin-bottom: 3rem ;c
   }
 
   .innernav {
@@ -774,11 +785,23 @@
     font-weight: 500;
   }
 
-  ul .menu {
+  .menu {
     list-style: none;      /* Removes bullets */
     padding: 0;
     margin: 0;
-  }
+    margin-bottom: 0 !important;
+ }
+
+ul li {
+  font-family: 'Work Sans', sans-serif;
+  text-decoration: none;
+  color:#434343;
+}
+
+a:link { color: #434343; }
+a:visited { color: #434343; } /* Must come AFTER :link */
+a:hover { color: #8c698a; }      /* Must come AFTER :visited */
+a:active { color: #8c698a; }   /* Must come AFTER :hover */
 
   li {
       display: inline-block; /* Places items next to each other */
@@ -826,9 +849,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1.0rem;
-    margin-top: 5rem;
+    align-items: center;;
     min-height: 10rem;
   }
 
@@ -945,3 +966,7 @@
   .logo {
     width: 20rem
   }
+
+  .gradient {
+  background: linear-gradient(#badbdf, #9fc1d2); 
+}

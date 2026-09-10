@@ -11,18 +11,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="milligram.css">
   </head>
   <body>
 <main>
         <div class="container">
             <!-- sticky navbar -->
-            <div class="row row-100 row-center topnav">
+            <div class="row row-100 topnav">
                 <div class="column column-33 innernav">
                     <div><img class="logo" src="images/Logo_horizontal_transparentBG_BW.png"></div>
                 </div>
-                <div class="column column-33 column-offset-33 navbar">
+                <div class="column column-33 column-offset-33 navbar" style="align-self: center;">
                         <nav>
                             <ul menu>
                             <li><a href="#home">Home</a></li>
@@ -33,7 +33,7 @@
                 </div>
             </div>
             <!-- /sitcky navbar-->
-            <div class="row row-100">
+            <div class="row row-100 top-padding bottom-padding gradient">
                 <div class="column column-60 column-offset-5 textbox">
                     <div class="row">
                         <div class="column column-100">
@@ -112,7 +112,9 @@
             </div>
 <!-- /stat bar -->
 <!-- cards /services -->
-            <div class="row row-100 services top-margin section">
+ <div class="row row-100 top-padding bottom-padding gradient">
+    <div class="column">
+            <div class="row row-100 services section">
                 <div class="column column-75 section-heading">
                     <h2 class="section-title">Senior Care Placement Services</h2>
                 </div>
@@ -193,9 +195,13 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 <!-- /cards /services -->
 <!-- about section -->
-            <div class="row row-100 top-margin">
+            <div class="row row-100 top-padding bottom-padding gradient" id="about">
+                <div class="column">
+                <div class="row">
                 <div class="column-50">
                     <div class="row row-100 section">
                         <div class="column column-100 section-heading">
@@ -220,7 +226,8 @@
                                 ✓Personalized care matching for every family <br/>
                                 ✓End-to-end support from assessment to move-in <br/>
                                 ✓Ongoing follow-through after placement
-                                ✓Introductions to trusted professionals for ancillary services related to your move — including personal organizing, downsizing, home sale, Medicare/Medi-Cal planning, and estate planning               
+                                ✓Introductions to trusted professionals for ancillary services related to your move*<br/>
+                                <h5 style="text-align: right">*including personal organizing, downsizing, home sale, Medicare/Medi-Cal planning, and estate planning</h5>
                             </p>
                         </div>
                         <div class="column column-25 column-center">
@@ -228,8 +235,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="column column-33 image-right section    ">
-                    <div class="row row-center profile-image pimage_2">
+                <div class="column column-33 image-right section">
+                    <div class="row row-center profile-image pimage_2 top-margin">
                         <div class="column column-75 column-center">
                             &nbsp;
                         </div>
@@ -241,8 +248,12 @@
                     <a class="button" href="#contact-form">Book a free consultation</a>
                 </div>
             </div>  
+                </div></div>
 <!-- /about section -->
-            <div class="row row-100 top-margin">
+<!-- contact section -->
+ <div class="row gradient">
+ <div class="column">
+            <div class="row row-100 top-padding">
                 <div class="column column-100 section-heading">
                     <h2 class="section-title">Contact us for your free consultation</h2>
                 </div>
@@ -272,11 +283,14 @@
                         </fieldset>
                     </form>
                 </div>
-                <div class="column column-33 column-offset-10 contact-image">
+                <div class="column column-33 column-offset-10 contact-image top-margin">
                     &nbsp;
                 </div>
             </div>
         </div>
+        </div>
+        </div>
+<!-- /contact section-->
     </main>
     <script src="index.js"></script>
     <script src="scripts/phoneEntry.js"></script>
